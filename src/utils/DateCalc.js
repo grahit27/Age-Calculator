@@ -1,4 +1,4 @@
-function calAge(DOB) {
+const calAge = (DOB) => {
   var today = new Date();
   const { dobDay, dobMonth, dobYear } = DOB;
   const dobDate = new Date(dobYear, dobMonth, dobDay);
@@ -43,5 +43,5 @@ function calAge(DOB) {
   }
   //   var age = years + " years " + months + " months " + days + " days";
   return { days, months, years };
-}
+};
 export default calAge;

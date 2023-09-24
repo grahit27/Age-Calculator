@@ -3,12 +3,11 @@
   "name": "age-calc-app",
   "version": "1.0.0",
   "description": "![Design preview for the Age calculator app coding challenge](./design/desktop-preview.jpg)",
-  "main": "index.js",
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "test": "jest"
   },
   "author": "Grahit",

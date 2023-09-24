@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Body from "./component/Body";
+import Body from "./src/component/Body";
 const AppLayout = () => {
   return <Body />;
 };

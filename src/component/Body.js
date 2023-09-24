@@ -4,10 +4,13 @@ import { useState } from "react";
 import calAge from "../utils/DateCalc";
 const Body = () => {
   const [age, setAge] = useState({});
-  const [day, setDay] = useState(0);
-  const [month, setMonth] = useState(0);
-  const [year, setYear] = useState(0);
-  console.log("Body Render");
+  const [day, setDay] = useState();
+  const [month, setMonth] = useState();
+  const [year, setYear] = useState();
+  // console.log("Body Render");
+  // Issues
+  // Missing Field is Empty Error when button in clicked
+  // Resize based on Mobile
   return (
     <div className="m-4">
       <div className="p-2 m-2 grid grid-cols-3 gap-4 ">

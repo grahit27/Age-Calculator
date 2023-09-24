@@ -24,14 +24,14 @@ const checkData = ({ type, data }) => {
 };
 const DataInputField = ({ type, data, setData, colorScheme, errorBool }) => {
   return (
-    <div className="font-poppins ">
+    <div className="font-poppins">
       <h1
         className={`py-1 text-${colorScheme.h1} text-xs font-bold tracking-[.25rem]`}
       >
         {type.toUpperCase()}
       </h1>
       <div
-        className={`p-2 w-[170px] ring-1 text- ring-inset ring-${colorScheme.inputBox} focus-within:ring-1 focus-within:ring-inset focus-within:ring-Purple rounded-xl`}
+        className={`p-2 w-[170px] ring-1 ring-inset ring-${colorScheme.inputBox} focus-within:ring-1 focus-within:ring-inset focus-within:ring-Purple rounded-xl`}
       >
         <input
           type="number"
@@ -42,16 +42,22 @@ const DataInputField = ({ type, data, setData, colorScheme, errorBool }) => {
           }}
         ></input>
       </div>
-      {errorBool && (
-        <label className="text-sm text-Light_red font-poppins italic">
-          Must be a Valid {type}
-        </label>
-      )}
+      {errorBool &&
+        (data ? (
+          <label className="text-sm text-Light_red font-poppins italic">
+            Must be a valid {type}
+          </label>
+        ) : (
+          <label className="text-sm text-Light_red font-poppins italic">
+            This field is required
+          </label>
+        ))}
     </div>
   );
 };
 
 const DataInput = ({ type, data, setData }) => {
+  console.log("Data Field Render");
   return checkData({ type, data }) ? (
     <DataInputField
       {...{ type, data, setData }}

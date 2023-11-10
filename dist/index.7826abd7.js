@@ -2950,17 +2950,19 @@ var _clientDefault = parcelHelpers.interopDefault(_client);
 var _body = require("./src/component/Body");
 var _bodyDefault = parcelHelpers.interopDefault(_body);
 const AppLayout = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyDefault.default), {}, void 0, false, {
-        fileName: "App.js",
-        lineNumber: 5,
-        columnNumber: 10
-    }, undefined);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyDefault.default), {}, void 0, false, {
+            fileName: "App.js",
+            lineNumber: 6,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false);
 };
 _c = AppLayout;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
     fileName: "App.js",
-    lineNumber: 8,
+    lineNumber: 10,
     columnNumber: 13
 }, undefined));
 var _c;
